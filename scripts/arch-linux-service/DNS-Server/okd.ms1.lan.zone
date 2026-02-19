@@ -8,7 +8,7 @@ $TTL 8h
       1W )    ; minimum (1 week)
   IN  NS  ns1.okd.ms1.lan.
 
-ns1.okd.ms1.lan.        IN  A 10.0.0.100
+ns1.okd.ms1.lan.        IN  A 10.0.0.1
 api.okd.ms1.lan.        IN  A 10.0.0.100
 api-int.okd.ms1.lan.    IN  A 10.0.0.100
 *.apps.okd.ms1.lan.     IN  A 10.0.0.100
@@ -20,5 +20,5 @@ control-plane3.okd.ms1.lan. IN  A 10.0.0.152
 compute1.okd.ms1.lan.   IN  A 10.0.0.155
 compute2.okd.ms1.lan.   IN  A 10.0.0.160
 
-bastion.okd.ms1.lan.    IN  A   10.0.0.67
-bootstrap.okd.ms1.lan.    IN  A 10.0.0.68
+bastion.okd.ms1.lan.    IN  A   10.0.0.1
+bootstrap.okd.ms1.lan.    IN  A 10.0.0.145

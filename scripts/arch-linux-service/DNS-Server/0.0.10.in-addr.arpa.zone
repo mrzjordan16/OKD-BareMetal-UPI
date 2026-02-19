@@ -1,0 +1,22 @@
+$TTL 8h
+@   IN    SOA   ns1.okd.ms1.lan. root (
+          2024080101  ; serial
+          3H    ; refresh (3 hours)
+          30M   ; retry (30 minutes)
+          2W    ; expiry (2 weeks)
+          1W )    ; minimum (1 week)
+      IN  NS  ns1.okd.ms1.lan.
+
+
+100.0.0.10.in-addr.arpa.  IN  PTR api.okd.ms1.lan.
+100.0.0.10.in-addr.arpa.  IN  PTR api-int.okd.ms1.lan.
+
+150.0.0.10.in-addr.arpa.  IN  PTR control-plane1.okd.ms1.lan.
+151.0.0.10.in-addr.arpa.  IN  PTR control-plane2.okd.ms1.lan.
+152.0.0.10.in-addr.arpa.  IN  PTR control-plane3.okd.ms1.lan.
+
+155.0.0.10.in-addr.arpa.  IN  PTR compute1.okd.ms1.lan.
+160.0.0.10.in-addr.arpa.  IN  PTR compute2.okd.ms1.lan.
+
+1.0.0.10.in-addr.arpa.   IN  PTR bastion.okd.ms1.lan.
+145.0.0.10.in-addr.arpa.  IN  PTR bootstrap.okd.ms1.lan.
