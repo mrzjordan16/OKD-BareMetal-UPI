@@ -188,9 +188,9 @@ Bootstrapping steps:
 
 | Machine | OS | CPU (vCPU) | RAM | Storage | IOPS |
 |---------|----|------------|-----|---------|------|
-| Bootstrap | FCOS | 4 | 16 GB | 100 GB | 300 |
-| Control Plane | FCOS | 4 | 16 GB | 100 GB | 300 |
-| Compute (Worker) | FCOS | 2 | 8 GB | 100 GB | 300 |
+| Bootstrap | SCOS | 4 | 16 GB | 100 GB | 300 |
+| Control Plane | SCOS | 4 | 16 GB | 100 GB | 300 |
+| Compute (Worker) | SCOS | 2 | 8 GB | 100 GB | 300 |
 
 - 1 vCPU = 1 physical core when SMT/Hyper-Threading is disabled; otherwise use (threads × cores) × sockets.
 - OKD/Kubernetes are sensitive to disk performance; etcd needs ≤10 ms p99 fsync. Fast storage (e.g. SSD/NVMe) is recommended.
@@ -238,12 +238,12 @@ The `index.html` in this repo is the interactive network diagram (service node, 
 | # | Name | Model | Purpose | Linux | IP Address | Hostname | MAC (example) |
 |---|------|-------|---------|-------|------------|----------|----------------|
 | 1 | Intel NUC | NUC7i5BNH | Service | Omarchy Linux | 192.168.8.206 / 10.0.0.1 | okd.ms1.lan | EC:9A:0C:1B:17:84 / F4:4D:30:6F:39:A3 |
-| 2 | JPYXKM | DAD600/DLL600D | Bootstrap | Fedora Core | 10.0.0.145 | bootstrap.okd.ms1.lan | E0:51:D8:17:54:FC |
-| 3 | GMKtec NucBox | K12 Mini | Control Plane | Fedora Core | 10.0.0.150 | control-plane1.okd.ms1.lan | 84:47:09:71:F4:4B |
-| 4 | HP EliteDesk | 705 G4 35W | Control Plane | Fedora Core | 10.0.0.151 | control-plane2.okd.ms1.lan | 80:E8:2C:2A:36:0D |
-| 5 | HP EliteDesk | 705 G4 36W | Control Plane | Fedora Core | 10.0.0.152 | control-plane3.okd.ms1.lan | 04:0E:3C:89:12:2F |
-| 6 | GMKtec NucBox | K8 Plus Mini | Worker | Fedora Core | 10.0.0.155 | compute1.okd.ms1.lan | C8:FF:BF:0F:7C:43 |
-| 7 | GMKtec NucBox | K9 Mini | Worker | Fedora Core | 10.0.0.160 | compute2.okd.ms1.lan | 84:47:09:54:7D:C9 |
+| 2 | JPYXKM | DAD600/DLL600D | Bootstrap | CentOS Stream CoreOS | 10.0.0.145 | bootstrap.okd.ms1.lan | E0:51:D8:17:54:FC |
+| 3 | GMKtec NucBox | K12 Mini | Control Plane | CentOS Stream CoreOS  | 10.0.0.150 | control-plane1.okd.ms1.lan | 84:47:09:71:F4:4B |
+| 4 | HP EliteDesk | 705 G4 35W | Control Plane | CentOS Stream CoreOS | 10.0.0.151 | control-plane2.okd.ms1.lan | 80:E8:2C:2A:36:0D |
+| 5 | HP EliteDesk | 705 G4 36W | Control Plane | CentOS Stream CoreOS  | 10.0.0.152 | control-plane3.okd.ms1.lan | 04:0E:3C:89:12:2F |
+| 6 | GMKtec NucBox | K8 Plus Mini | Worker | CentOS Stream CoreOS  | 10.0.0.155 | compute1.okd.ms1.lan | C8:FF:BF:0F:7C:43 |
+| 7 | GMKtec NucBox | K9 Mini | Worker | CentOS Stream CoreOS  | 10.0.0.160 | compute2.okd.ms1.lan | 84:47:09:54:7D:C9 |
 
 ---
 
