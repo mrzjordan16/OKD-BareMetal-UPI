@@ -1,21 +1,11 @@
-# OKD Cluster Handbook: Design, Deployment, Operations & Troubleshooting
+# OpenShift Kubernetes Distribution - OKD v4.21.0 Bare Metal Install - User Provisioned Infrastructure (UPI)
 
 **OpenShift Kubernetes Distribution (OKD)** — User-provisioned bare-metal cluster for homelab and on-premise deployments.
 
-- **Document generated:** 31-01-2026  
 - **Repository:** [OKD-BareMetal](https://github.com/mnhomelab/OKD-BareMetal)  
 - **Network architecture (full scale):** [OKD-BareMetal – Network Diagram](https://mnhomelab.github.io/OKD-BareMetal/)
 
----
 
-## Document Revision History
-
-| Editor           | Date       | Description                                                                 |
-|------------------|------------|-----------------------------------------------------------------------------|
-| Mirza Nehal Baig | 31-01-2026 | Initial creation: Architecture, Cluster Limitation, Costing, Installation   |
-| Mirza Nehal Baig | 21-01-2026 | User Provision OKD Cluster (Production Cluster)                             |
-
----
 
 ## Table of Contents
 
