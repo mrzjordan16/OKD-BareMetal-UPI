@@ -2,3 +2,4 @@
 *.raw.gz filter=lfs diff=lfs merge=lfs -text
 tool/**/openshift-*-linux-*.tar.gz filter=lfs diff=lfs merge=lfs -text
 scos.raw.gz filter=lfs diff=lfs merge=lfs -text
+tool/v4.21.0/openshift-*-linux-*.tar.gz filter=lfs diff=lfs merge=lfs -text
