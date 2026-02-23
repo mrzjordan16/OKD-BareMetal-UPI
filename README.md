@@ -1,6 +1,6 @@
 # OpenShift Kubernetes Distribution - OKD v4.21.0 Bare Metal - User Provisioned Infrastructure (UPI)
 
-**This branch contain steps for [v4.21.0-okd-scos version](https://origin-release.apps.ci.l2s4.p1.openshiftapps.com/releasestream/4-scos-stable/release/4.21.0-okd-scos.6) Installation**
+**This branch contain steps for [v4.21.0-okd-scos.6 version](https://origin-release.apps.ci.l2s4.p1.openshiftapps.com/releasestream/4-scos-stable/release/4.21.0-okd-scos.6) Installation**
 
 **OpenShift Kubernetes Distribution (OKD)** — User-provisioned bare-metal cluster for homelab and on-premise deployments.
 
