@@ -1,5 +1,6 @@
 .~*.docx
 .~*.html
 Documentation/.~*.docx
-Documentation/.~D-Cluster.docx
+Documentation/.~D-*.docx
 .openshift_install.log
+.install-config.yaml-backup

@@ -1,0 +1,40 @@
+$ORIGIN okd.mnhomelabs.com.
+$TTL 8h
+@ IN  SOA ns1.okd.mnhomelabs.com.  root (
+      2024080101  ; serial
+      3H    ; refresh (3 hours)
+      30M   ; retry (30 minutes)
+      2W    ; expiry (2 weeks)
+      1W )    ; minimum (1 week)
+  IN  NS  ns1.okd.mnhomelabs.com.
+
+ns1.okd.mnhomelabs.com.        IN  A 10.0.0.1
+
+; Service Node
+bastion.okd.mnhomelabs.com.    IN  A   10.0.0.1
+
+; Temp Bootstrap Node
+bootstrap.okd.mnhomelabs.com.    IN  A 10.0.0.145
+
+; Control Plane Nodes
+api.okd.mnhomelabs.com.        IN  A 10.0.0.1
+api-int.okd.mnhomelabs.com.    IN  A 10.0.0.1
+*.apps.okd.mnhomelabs.com.     IN  A 10.0.0.1
+
+
+; Control Plane Nodes
+control-plane1.okd.mnhomelabs.com. IN  A 10.0.0.150
+control-plane2.okd.mnhomelabs.com. IN  A 10.0.0.151
+control-plane3.okd.mnhomelabs.com. IN  A 10.0.0.152
+
+; Worker Nodes
+compute1.okd.mnhomelabs.com.   IN  A 10.0.0.155
+compute2.okd.mnhomelabs.com.   IN  A 10.0.0.160
+
+
+oauth-openshift.apps.okd.mnhomelabs.com.     IN     A     10.0.0.1
+console-openshift-console.apps.okd.mnhomelabs.com.     IN     A     10.0.0.1
+
+
+
+
